@@ -1,0 +1,40 @@
+.categories{
+    margin-bottom: 4rem;
+    .car-category , .tv-category{
+        @extend %bg-circle;
+        background-image: linear-gradient($primary-color,$secondary-color);
+    }
+    .phone-category , .pet-category{
+        @extend %bg-circle;
+        background-image: linear-gradient(#b74457,#5c4448);
+    }
+    .house-category{
+        @extend %bg-circle;
+        background-image: linear-gradient(#e78158,#655048);
+    }
+    .clothes-category{
+        @extend %bg-circle;
+        background-image: linear-gradient(#0fc1d5,#1a9ba6);
+    }
+    i{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+.category-btn button{
+    margin-top: 1rem;
+    background-color: #444444;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    width: 11rem;
+    &:hover{
+        color: #ddd;
+    }
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,43 @@
+.ads{
+    margin-bottom: 2rem;
+    h2{
+        @extend %heading;
+    }
+    a{
+        text-decoration: none;
+        color: #212529;
+    }
+    .card{
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 8px #ddd;
+        margin-bottom: 1.5rem;
+        .card-title{
+            text-align: center;
+            font-weight: 600;
+        }
+        .card-body{
+            padding: 0.5rem 1.25rem;
+        }
+        .content-item{
+            padding-bottom: 0.5rem;
+            i{
+                color: $primary-color;
+                padding-left: 0.3rem;
+            }
+        }
+    }
+    .more{
+        text-align: center;
+
+        .more-btn{
+            background-image: linear-gradient($primary-color,$secondary-color);
+            color: #fff;
+            padding: 0.5rem 4rem;
+            border-radius: 2rem;
+            border: none;
+        }
+    }
+   
+}

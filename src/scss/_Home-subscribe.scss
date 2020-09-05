@@ -1,0 +1,42 @@
+.subscribe{
+    background-color: $secondary-color;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    h2{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        color: #fff;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            border: none;
+            border-radius: 2rem;
+            width: 35rem;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        
+            @media (max-width: 575.98px) { 
+                width: 19rem;
+            }
+            @media (max-width: 310.98px) { 
+                padding: 1rem;
+                width: 15rem;
+            }
+        }
+
+        .send-btn{
+            background-color: #fff;
+            color: $primary-color;
+            padding: 0.5rem 4rem;
+            border-radius: 2rem;
+        }
+    } 
+   
+}

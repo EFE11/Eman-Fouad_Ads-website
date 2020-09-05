@@ -1,0 +1,96 @@
+.internal-header{
+    height: 35vh;
+    margin-bottom: 0;
+    .logo-nav{
+        @media (min-width:350px) and (max-width: 1199.98px){
+            height: 100%;
+        }
+        @media (max-width: 350.98px){
+            height: 100%;
+        } 
+    }
+}
+.login{
+    background-color: #f1f1f1;
+    padding: 6rem 0;
+
+    .input-style{
+        background-color: $primary-color;
+        padding: 0.5rem 1rem;
+        width: 95%;
+        border-radius: 2rem;
+        margin-bottom: 2.5rem;
+      
+        i{
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        input{
+            display: inline-block;
+            width: 87%;
+            border: none;
+            background-color: transparent;
+            padding: 0 0.5rem 0 0;
+            
+            &::placeholder{
+                color: #f2cad2;
+            }
+        }
+      
+    }
+    .login-btn{
+        background-color: #ab3145;
+        padding: 0.5rem 4rem;
+        border-radius: 2rem;
+        color: #fff;
+        box-shadow: 3px 3px 3px #ccc;
+        margin-bottom: 3rem;
+    }
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.login-box{
+    box-shadow: 5px 5px 10px #ccc;
+    border-radius: 0 1rem 1rem 0;
+
+    .content{
+        background-color: #fff;
+        padding: 5rem 1rem 7rem;
+        border-radius: 0 1rem 1rem 0;
+        @media (max-width: 991.98px) {
+            order: 2;
+            border-radius: 0 ;
+        }
+    }
+    .illustration{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient($primary-color,$secondary-color);
+        padding: 5rem 1rem 7rem;
+        img{
+            width: 70%;
+        }
+        @media (max-width: 991.98px) {
+            order: 1;
+        }
+    }
+    .other{
+        display: flex;
+        justify-content: space-between;
+    
+        a{
+            color: $primary-color;
+            p{
+                display: inline-block;
+                
+            }
+        }
+        
+    }
+
+    @media (max-width: 991.98px) {
+        display: flex;
+    }
+}

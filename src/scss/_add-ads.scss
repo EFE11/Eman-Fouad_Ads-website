@@ -1,0 +1,79 @@
+.add-ads{
+    background-color: #f1f1f1;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    h2{
+        @extend %heading;
+    }
+ 
+    .add-form{
+        background-color: #ececec;
+        padding: 2rem 0.8rem 6rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px #ccc;
+
+       
+       .form-group{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+
+           label{
+            color: $secondary-color;
+            font-weight: 700;
+        }
+           input{
+               padding: 1.5rem 0.5rem;
+               border-radius: 2rem;
+               border: none;
+           }
+           textarea{
+            border-radius: 1rem;
+            border: none;
+           }
+       }
+       .select-box{
+        color: $secondary-color;
+        border-radius: 3rem;
+        height: 3.3rem;
+        appearance: none;
+        border: none;
+        background-image: url("./../../images/down-arrow2.svg");
+        background-repeat: no-repeat;
+        background-size: 3%;
+        background-position:top 50% left 5%;
+        cursor: pointer;
+       }
+       .check{
+           text-align: center;
+           padding: 2rem 0;
+           color: $secondary-color;
+           h5{
+               text-align: right;
+           }
+           label{
+               padding-left: 0.5rem;
+           }
+           .form-check{
+               padding-bottom: 1rem;
+           }
+       }
+       .publish-ads{
+           text-align: center;
+           button{
+               background-image: linear-gradient($primary-color , $secondary-color);
+               color: #fff;
+               padding: 0.5rem 3rem;
+               border: none;
+               border-radius: 2rem;
+               margin-top: 3rem;
+           }
+       }
+        .banner{
+            padding-top: 3rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
